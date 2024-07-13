@@ -22,9 +22,9 @@
       height: 100px;
       align-items: end;
       background-color: #0d7691;
-      background-image: url("photos/banner.jpg") alt=;
+      background-image: url("photos/banner.jpg") alt="";
       background-position: center;
-      background-size: fill;
+      background-size: cover;
       color: white;
       padding: 40px;
       word-spacing: 0.5cm;
@@ -89,17 +89,14 @@
 
     .left-panel {
       flex: 0 0 250px;
-      background-color: #e0d6d6;
+      background-color: rgba(255, 255, 255, 0.8);
       padding: 20px;
       text-align: left;
       text-emphasis-color: gray;
       font-size: 15px;
       position: relative;
     }
-
-    .left-panel:hover {
-      background-color: #c0b1b1; 
-    }
+    
     .left-panel img {
       max-width: 200px;
       height: auto;
@@ -109,7 +106,7 @@
 
     .main-content {
       flex: 1;
-      padding: 20px;
+      padding: 10px;
       display: none; 
       margin: 150px;
       margin-top: 10px;

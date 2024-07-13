@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Teacher's Website</title>
+  <title>Augustine Larweh Mahu</title>
   <style>
     body, h1, h2, h3, h4, h5, h6, ul, li, p {
       margin:0;
-      padding: 0;
+      padding:0;
       font-family: 'Lato', sans-serif;
     }
 
@@ -21,20 +21,13 @@
       justify-content: space-between;
       height: 100px;
       align-items: end;
-      background-color: #0d7691;
-      background-image: url("photos/wallaper.jpg");
+      background-color: #000000;
+      /*background-image: url("photos/banner.jpg");*/
       background-position: center;
       background-size: cover;
       color: white;
-      padding: 40px;
+      padding: 0px;
       word-spacing: 0.5cm;
-    }
-
-    .header img {
-      max-width: 100px;
-      height: fit-content;
-      position: flex;
-      border-radius: 50%;
     }
 
     .header nav ul {
@@ -44,22 +37,18 @@
 
     .header nav ul li {
       margin-right: 25px;
-      transition: 0.3 ease;
+      /*transition: 0.3 ease;*/
     }
 
     .header nav ul li a {
       color: white;
       text-decoration: none;
       font-size: 20px;
-      transition: all 0.3 ease;
-    }
-    
-    .header nav ul li:hover {
-      transform: translateY(3px)
+      /*transition: all 0.3 ease;*/
     }
 
     .header nav ul li a:hover {
-      color: #d7b728;
+      color: #B99D64; /*UG-gold color*/
       font-style: normal;
     }
 
@@ -88,21 +77,17 @@
     }
 
     .left-panel {
-      flex: 0 0 250px;
-      background-color: #e0d6d6;
-      padding: 20px;
+      flex: 0 0 240px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 15px;
       text-align: left;
       text-emphasis-color: gray;
       font-size: 15px;
       position: relative;
-      transition: all 0.3s ease;
     }
-
-    .left-panel:hover {
-      background-color: #c0b1b1; 
-    }
+    
     .left-panel img {
-      max-width: 200px;
+      max-width: 150px;
       height: auto;
       border-radius: 50%;
       position: relative;
@@ -110,9 +95,9 @@
 
     .main-content {
       flex: 1;
-      padding: 20px;
+      padding: 10px;
       display: none; 
-      margin: 150px;
+      margin: 70px;
       margin-top: 10px;
       background-color: rgba(255, 255, 255, 0.8);
       position: relative;
@@ -131,7 +116,16 @@
       bottom: 0;
       width: 100%;
     }
-    
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #0d7691;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
     
   </style>
 </head>
@@ -139,32 +133,37 @@
 
   <div class="container">
     <header class="header">
-      <img src="photos/university of ghana.png" alt="Teacher's Photo">
+      
       <nav>
         <ul>
-          <li><i><b><a href="index.html">Home</a></b></i></li>
-          <li><i><b><a href="research.html">Research</a></b></i></li>
-          <li><i><b><a href="teaching.html">Teaching</a></b></i></li>
-          <li><i><b><a href="publication.html">Publication</a></b></i></li>
-          <li><i><b><a href="awards.html">Awards</a></b></i></li>
-          <li><i><b><a href="talks.html">Talks</a></b></i></li>
-          <li><i><b><a href="my_student.html">MyStudent</a></b></i></li>
+          <li><b><a href="index.html">Home</a></b></li>
+          <li><b><a href="research.html">Research</a></b></li>
+          <li><b><a href="teaching.html">Teaching</a></b></li>
+          <li><b><a href="publication.html">Publication</a></b></li>
+          <li><b><a href="awards.html">Awards</a></b></li>
+          <li><b><a href="talks.html">Talks</a></b></li>
+          <li><b><a href="my_student.html">MyStudent</a></b></li>
         </ul>
       </nav>
     </header>
+
   <div class="content">
     <div class="left-panel">
-      <img src="photos/teacher's photo representation.jpg" alt="Teacher's Photo">
-      <h4>Dr Augustine Larweh Mahu</h4>
+      <img src="photos/profile_image.jpg" alt="">
+      <h3>Dr Augustine Larweh Mahu</h3>
       <br>
-      <p>Email: almahu@ug.edu.gh.com/ aglarwah@gmail.com</p>
+      <h4>Office</h4>
+      <p>Department of Mathematics</p>
+      <p>University of ghana</p>
+      <p>Post Office Box LG 62</p>
+      <p>Legon, Accra, Ghana</p>
       <br>
-      <p>Ghanaian</p>
-      <br>
-      <p>Phone:0552310771</p>
-      <br>
-      <p>Legon, Accra</p>
+      <h4>Contact</h4>
+      <p>Email: almahu@ug.edu.gh.com | aglarwah@gmail.com</p>
+      <p>Phone: +233 (55) 231 0771</p>
     </div>
+
+    
     <main id="teaching" class="main-content active">
      Course Code &nbsp;Course Description &nbsp;Credit Hours &nbsp;Academic Year
       <p>MATH 101 &nbsp; General Mathematics &nbsp;&nbsp;&nbsp;3 &nbsp; 2018/2019</p>
